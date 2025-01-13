@@ -1,7 +1,9 @@
 #define TESHARI_PUNCH_LOW 2 // Lower bound punch damage
 #define TESHARI_PUNCH_HIGH 6
-#define TESHARI_BURN_MODIFIER 1.25 // They take more damage from practically everything
-#define TESHARI_BRUTE_MODIFIER 1.2
+#define TESHARI_BURN_MODIFIER 1 // 1.25 // They take more damage from practically everything
+#define TESHARI_BRUTE_MODIFIER 1 // 1.2 // They shouldn't though, because that makes them useless for anything but station-bound nonviolent roles,
+// meaning they can't be used for ghost role fun or antaggery, and there's nothing to counteract this straight debuff for "haha space turkey"'s sake. -Evan
+// The Fragility quirk is also whole -6 points. Use that for your "lore accurate" debuffing, at least you get points. -Evan
 
 // teshari!
 /obj/item/bodypart/head/mutant/teshari
@@ -10,7 +12,7 @@
 	limb_id = SPECIES_TESHARI
 	brute_modifier = TESHARI_BRUTE_MODIFIER
 	burn_modifier = TESHARI_BURN_MODIFIER
-	head_flags = HEAD_EYESPRITES|HEAD_EYECOLOR|HEAD_EYEHOLES|HEAD_DEBRAIN
+	head_flags = HEAD_EYESPRITES|HEAD_EYECOLOR|HEAD_EYEHOLES|HEAD_DEBRAIN|HEAD_HAIR
 
 /obj/item/bodypart/head/mutant/teshari/Initialize(mapload)
 	worn_ears_offset = new(
