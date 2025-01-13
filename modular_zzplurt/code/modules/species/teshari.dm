@@ -1,5 +1,21 @@
 /datum/species/teshari
 
+
+/datum/species/teshari/get_physical_attributes()
+	return "Teshari are fast, raptor-like avians capable of rapid, dextrous movement. \
+		While speedy and agile, they have much less resilience compared to humanoid species.\
+		Additionally, their biology enables them to handle colder atmospheres but suffer more in hotter climates."
+
+/*/datum/species/teshari/get_species_description() // Why does this crash TGUI I don't understand -Evan
+	return "Teshari are a fast, raptor-like avian species."
+*/
+/datum/species/teshari/get_species_lore()
+	return list(
+		"Teshari are a raptor-like species originating from the tundra planet Sareshi, in the star system of Qerr'balak.\
+		They gather in packs, and are very social. Despite this, they do not have a concept of 'family'. Their family is their pack.\
+		They developed in the same star system as the Skrell, and had initially poor relations. However, Teshari and Skrell now have a mutual understanding and face the stars together.",
+	)
+
 /datum/species/teshari/on_species_gain(mob/living/carbon/human/new_teshari, datum/species/old_species, pref_load)
 	. = ..()
 	var/datum/action/cooldown/sonar_ping/sonar_ping = new(new_teshari)

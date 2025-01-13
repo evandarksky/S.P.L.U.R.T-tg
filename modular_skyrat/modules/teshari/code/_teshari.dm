@@ -49,29 +49,6 @@
 		BODY_ZONE_R_LEG = /obj/item/bodypart/leg/right/mutant/teshari,
 	)
 	meat = /obj/item/food/meat/slab/chicken/human
-//Splurt edit
-/datum/species/teshari/get_physical_attributes()
-	return "Teshari are fast, raptor-like avians capable of rapid, dextrous movement. \
-	While speedy and agile, they have much less resilience compared to humanoid species.\
-	Additionally, their biology enables them to handle colder atmospheres but suffer more in hotter climates."
-
-/datum/species/teshari/get_species_description()
-	return "Teshari are a fast, raptor-like avian species."
-
-/datum/species/teshari/get_species_lore()
-	return list(
-		"Teshari are a raptor-like species originating from the tundra planet Sareshi, in the star system of Qerr'balak.\
-		They gather in packs, and are very social. Despite this, they do not have a concept of 'family'. Their family is their pack.\
-		They developed in the same star system as the Skrell, and had initially poor relations. However, Teshari and Skrell now have a mutual understanding and face the stars together."
-	)
-//end edit
-/datum/species/teshari/get_default_mutant_bodyparts()
-	return list(
-		"tail" = list("Teshari (Default)", TRUE),
-		"ears" = list("Teshari Regular", TRUE),
-		"legs" = list("Normal Legs", FALSE),
-	)
-
 
 /obj/item/organ/internal/tongue/teshari
 	liked_foodtypes = MEAT | GORE | RAW
