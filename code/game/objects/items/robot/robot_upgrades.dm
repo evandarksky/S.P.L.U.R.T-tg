@@ -322,7 +322,7 @@
 	if(toggle_action)
 		icon_state = "selfrepair_[on ? "on" : "off"]"
 	else
-		icon_state = "module_general"
+		icon_state = "cyborg_upgrade5"
 	return ..()
 
 /obj/item/borg/upgrade/selfrepair/proc/activate_sr()
